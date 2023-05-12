@@ -10,15 +10,15 @@ Si algún campo está vacío, se muestra una alerta y se impide el envío del fo
 Si todos los campos pasan la validación, se envía el formulario.
 */
 document.addEventListener('DOMContentLoaded', function() {
-    var form = document.getElementById('form');
+    let form = document.getElementById('form');
 
     form.addEventListener('submit', function(event) {
       event.preventDefault(); // Impide que se envíe si no es válida
 
       // Lógica de validación
-      var nombreInput = document.getElementById('nombre');
-      var emailInput = document.getElementById('email');
-      var messageTextarea = document.getElementsByName('message')[0];
+      let nombreInput = document.getElementById('nombre');
+      let emailInput = document.getElementById('email');
+      let messageTextarea = document.getElementsByName('message')[0];
 
       if (nombreInput.value.trim() === '') { //recorta los espacios en balnco, si los hubiera
         alert('Por favor ingrese su nombre.');
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
 
-      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(emailInput.value.trim())) {
         alert('Por favor ingrese una dirección de email válida.');
         return;
