@@ -1,10 +1,9 @@
 # thepolicecodoacodo
 Web The Police para Codo a Codo Java fullstack comisión 23058, marzo a julio 2023
 
-![image](https://github.com/fpaterson/thepolicecodoacodo/assets/53309219/76267a53-3dfc-41fd-a26d-d816388887d5)
+![image](https://github.com/fpaterson/thepolicecodoacodo/assets/53309219/df4223b2-ca3e-489b-8d04-a35516d31e3d)
 
-
-Es una nueva versión de la página que hice para el cursod e front end de Coderhouse, sólo que con algo de lógica. Como primer ejericio, nos pidieron una página web estática, para el cual entregué la otra versión de esta web que se puede ver en mi perfil. Para esta segunda entrega se nos pidó agregarle algo de lógica mediante JS, por lo que escribí una función que valida los campos del formulario.
+Es una nueva versión de la página que hice para el curso de front end de Coderhouse, sólo que con algo de lógica. Como primer ejericio, nos pidieron una página web estática, para el cual entregué la otra versión de esta web que se puede ver en mi perfil. Para esta segunda entrega se nos pidó agregarle algo de lógica mediante JS, por lo que escribí una función que valida los campos del formulario.
 
 Explicación de la función
 
