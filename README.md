@@ -1,5 +1,5 @@
 # thepolicecodoacodo
-Web The Police para Codo a Codo
+Web The Police para Codo a Codo Java fullstack comisión 23058, marzo a julio 2023
 
 Es una nueva versión de la página que hice para el cursod e front end de Coderhouse, sólo que con algo de lógica. Como primer ejericio, nos pidieron una página web estática, para el cual entregué la otra versión de esta web que se puede ver en mi perfil. Para esta segunda entrega se nos pidó agregarle algo de lógica mediante JS, por lo que escribí una función que valida los campos del formulario.
 
