@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* EFECTO EN FOTO HERO AREA */
+@-webkit-keyframes kenburns-top {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%;
+    }
+
+    100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+        transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+    }
+}
+
+/* EFECTO EN TAPAS DISCOS*/
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Futura Condensed, Muli', Arial, sans-serif;
+    font-weight: 600;
+    padding: 0;
+}
+
+/* ---------header-----*/
+
+header,
+div,
+section {
+    overflow: auto;
+    background-color: gray;
+}
+
+/*----------------- LOGO--------*/
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 10%;
+    padding: 17px;
+}
+
+/*--------------------BARRA MENÚ-----*/
+
+.barra {
+    text-align: center;
+}
+
+.barra ul li {
+    font-size: 1.1em;
+    letter-spacing: 0.1px;
+    line-height: 1em;
+    margin: 40px 40px;
+    font-weight: 700;
+    display: inline;
+}
+
+.barra ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*--------ESTILO GLOBAL TÍTULOS-------------*/
+
+h2,
+h3 {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.titulo {
+    text-align: center;
+}
+
+/*----------HERO AREA----------------*/
+
+.hero {
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+
+}
+
+.kenburns-top {
+    -webkit-animation: kenburns-top 5s ease-out both;
+    animation: kenburns-top 5s ease-out both;
+}
+
+/* HISTORIA---*/
+
+.historia {
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/*-BIOGRAFIAS---------*/
+
+.biografias {
+    display: block;
+    margin: 0 auto;
+}
+
+.bios {
+    display: flex;
+    padding-top: 32px;
+    justify-content: center;
+    overflow: hidden;
+    flex-flow: row wrap;
+}
+
+.bio {
+    width: 320px;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 15px;
+}
+
+.bios .bio .imagen {
+    text-align: center;
+}
+
+.bios .bio img {
+    border-radius: 50%;
+    height: 12em;
+}
+
+/*PRENDEDORES---------------*/
+
+.prendedor {
+    display: flex;
+    justify-content: center;
+}
+
+.prendedor img {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    height: 60px;
+}
+
+.prendedor-final {
+    display: flex;
+    justify-content: center;
+}
+
+.prendedor-final {
+    background-color: darkgrey;
+}
+
+.prendedor-final img {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    height: 60px;
+}
+
+/* DISCOGRAFÍA DE ESTUDIO-------*/
+
+.foto-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.foto-grid {
+    width: 80%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.photo-grid-item {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.photo-grid-item a {
+    text-decoration: none;
+}
+
+.photo-grid-item img:hover {
+    -webkit-animation: heartbeat 1.5s ease-in-out both;
+    animation: heartbeat 1.5s ease-in-out both;
+}
+
+/* VIDEO-------------*/
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+}
+
+/*FORMULARIO DE CONTACTO*/
+
+#contacto {
+    display: block;
+    background-color: darkgrey;
+}
+
+form {
+    padding-top: 70px;
+    transition: all 4s ease-in-out;
+    text-align: center;
+}
+
+.form-control {
+    width: 50%;
+    background: white;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: #ff5722;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.myButton {
+    -moz-box-shadow: inset 0px 1px 0px 0px #cf866c;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #cf866c;
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+    background: -moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background: -webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background: -o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background: -ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315', GradientType=0);
+    background-color: #d0451b;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #942911;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 18px;
+    padding: 18px 76px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #854629;
+}
+
+.myButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+    background: -moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background: -webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background: -o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background: -ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b', GradientType=0);
+    background-color: #bc3315;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/* FOOTER------------------------*/
+
+footer {
+    background-color: whitesmoke;
+    font-size: 14px;
+    padding-left: 16px;
+    height: 40px;
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.copyright {
+    width: 90%;
+}
+
+.social {
+    width: 10%;
+    padding-right: 60px;
+}
+
+.iconos {
+    display: inline-flex;
+    overflow: hidden;
+    background-color: whitesmoke;
+    padding-top: 8px;
+}
+
+.social,
+.copyright {
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.iconos-social {
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.social .fab {
+    padding-right: 8px;
+    padding-left: 15px;
+    font-size: 30px;
+    color: gray;
+}
