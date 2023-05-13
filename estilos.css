@@ -271,6 +271,11 @@ input {
     height: 45px;
 }
 
+.button-container{
+    text-align: center;
+    background-color: darkgrey;
+}
+
 form .submit {
     background: #ff5722;
     border-color: transparent;
