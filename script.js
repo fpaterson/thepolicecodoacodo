@@ -1,7 +1,6 @@
 /*Explicación del código:
 
-El código JavaScript espera primero a que se cargue el contenido del DOM utilizando el listener del evento DOMContentLoaded.
-Recupera el elemento formulario y el elemento botón de envío utilizando sus respectivos atributos id.
+Recupera el elemento formulario utilizando su atributo id.
 Se añade un receptor de eventos al evento de envío del formulario, que se activa cuando se envía el formulario.
 Dentro de la función manejadora de eventos, se realiza la lógica de validación:
 Se recuperan los valores de los campos nombre, email y mensaje.
@@ -9,7 +8,6 @@ Se comprueba si cada campo está vacío, además de la escritura correcta del ma
 Si algún campo está vacío, se muestra una alerta y se impide el envío del formulario llamando a preventDefault().
 Si todos los campos pasan la validación, se envía el formulario.
 */
-document.addEventListener('DOMContentLoaded', function() {
     let form = document.getElementById('form');
 
     form.addEventListener('submit', function(event) {
@@ -44,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Formulario válido, se puede enviar.
       form.submit();
     });
-  });
+
 
 
 
