@@ -1,5 +1,5 @@
 # thepolicecodoacodo
-Web The Police para Codo a Codo Java fullstack comisión 23058, marzo a julio 2023
+Web The Police para Codo a Codo Java fullstack comisión 23058, marzo a julio 2023.
 
 ![image](https://github.com/fpaterson/thepolicecodoacodo/assets/53309219/df4223b2-ca3e-489b-8d04-a35516d31e3d)
 
