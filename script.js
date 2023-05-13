@@ -43,7 +43,12 @@ Si todos los campos pasan la validación, se envía el formulario.
       form.submit();
     });
 
-
+    document.getElementById("clearButton").addEventListener("click", function() {
+      document.getElementById("nombre").value = "";
+      document.getElementById("email").value = "";
+      document.getElementsByName("message")[0].value = "";
+    });
+  
 
 
 
