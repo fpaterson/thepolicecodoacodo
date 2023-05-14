@@ -274,6 +274,7 @@ input {
 .button-container {
     text-align: center;
     background-color: darkgrey;
+    overflow: hidden;
 }
 
 form .submit {
