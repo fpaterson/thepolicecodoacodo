@@ -40,14 +40,10 @@ Si todos los campos pasan la validación, se envía el formulario.
       }
 
       // Formulario válido, se puede enviar.
-      form.submit();
+      alert("Mensaje enviado. Gracias.")
     });
 
-    document.getElementById("clearButton").addEventListener("click", function() {
-      document.getElementById("nombre").value = "";
-      document.getElementById("email").value = "";
-      document.getElementsByName("message")[0].value = "";
-    });
+ 
   
 
 
