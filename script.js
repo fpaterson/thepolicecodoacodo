@@ -40,7 +40,8 @@ Si todos los campos pasan la validación, se envía el formulario.
       }
 
       // Formulario válido, se puede enviar.
-      alert("Mensaje enviado. Gracias.")
+      alert("Mensaje enviado. Gracias.");
+      form.reset();
     });
 
  
