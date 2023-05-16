@@ -13,5 +13,5 @@ Dentro de la función manejadora de eventos, se realiza la lógica de validació
 Se recuperan los valores de los campos nombre, email y mensaje.
 Se comprueba si cada campo está vacío, además de la escritura correcta del mail mediante una expresión regular, utilizando .trim() para eliminar los espacios al principio y al final.
 Si algún campo está vacío, se muestra una alerta y se impide el envío del formulario llamando a preventDefault().
-Si todos los campos pasan la validación, se envía el formulario.
+Si todos los campos pasan la validación, se imprime una alerta con el evío del formulario y se resetea el mismo.
 
