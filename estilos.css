@@ -79,13 +79,14 @@ section {
 }
 
 /*----------------- LOGO--------*/
-.logo {
-    text-align: center;
-}
 
-.logo img {
-    width: 10%;
-    padding: 17px;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
 }
 
 /*--------------------BARRA MENÚ-----*/
@@ -371,4 +372,34 @@ footer {
     padding-left: 15px;
     font-size: 30px;
     color: gray;
+}
+
+@media (min-width: 359px) {
+    .logo img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 476px) {
+    .logo img {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo img {
+        width: 30%;
+    }
 }
