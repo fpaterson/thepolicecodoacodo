@@ -366,15 +366,14 @@ footer {
     color: gray;
 }
 
-
 /*media queries*/
 
-/*esto es como si dijera "a partir de un mínimo de 359px, esto:...
+/*esto es como si dijera "hasta un máximo de 576 px aplicar:"
 cuando se usa min-width se expresa en término del desktop primero,
 cuando se usa max-width se expresa en términos de mobile first*/
 
 
-@media (min-width: 1px) {
+@media (max-width: 576px) {
     .logo img {
         max-width: 100%;
     }
@@ -383,36 +382,39 @@ cuando se usa max-width se expresa en términos de mobile first*/
         margin-top: 10px;
     }
 
+    footer p {
+        font-size: smaller;
+    }
+
 }
 
-/*esto es como si dijera "a partir de un mínimo de 476px, esto:...*/
-@media (min-width: 476px) {
+/*esto es como si dijera "hasta un máximo de 476px, aplicar:...*/
+@media (min-width: 768px) {
     .logo img {
         max-width: 90%;
     }
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .logo img {
         width: 70%;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .logo img {
         width: 50%;
     }
 }
 
 
-@media (min-width: 1200px) {
-
-
+@media (min-width: 1300px) {
     .logo img {
         width: 30%;
     }
 }
+
 
 
 
