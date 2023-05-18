@@ -378,8 +378,10 @@ cuando se usa max-width se expresa en términos de mobile first*/
         max-width: 100%;
     }
 
+   /*asigno ancho en móviles porque si no, no son de igual tamaño*/
     .button-container button {
         margin-top: 10px;
+        width: 80%;
     }
 
     footer p {
