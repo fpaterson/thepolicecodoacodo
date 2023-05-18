@@ -79,7 +79,6 @@ section {
 }
 
 /*----------------- LOGO--------*/
-
 .logo {
     display: flex;
     justify-content: center;
@@ -273,19 +272,12 @@ input {
 }
 
 .button-container {
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
     background-color: darkgrey;
-    overflow: hidden;
 }
 
-form .submit {
-    background: #ff5722;
-    border-color: transparent;
-    font-size: 20px;
-    font-weight: bold;
-    height: 50px;
-    margin-top: 20px;
-}
+
 
 .myButton {
     -moz-box-shadow: inset 0px 1px 0px 0px #cf866c;
@@ -374,16 +366,31 @@ footer {
     color: gray;
 }
 
-@media (min-width: 359px) {
+
+/*media queries*/
+
+/*esto es como si dijera "a partir de un mínimo de 359px, esto:...
+cuando se usa min-width se expresa en término del desktop primero,
+cuando se usa max-width se expresa en términos de mobile first*/
+
+
+@media (min-width: 1px) {
     .logo img {
         max-width: 100%;
     }
+
+    .button-container button {
+        margin-top: 10px;
+    }
+
 }
 
+/*esto es como si dijera "a partir de un mínimo de 476px, esto:...*/
 @media (min-width: 476px) {
     .logo img {
         max-width: 90%;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -398,8 +405,14 @@ footer {
     }
 }
 
+
 @media (min-width: 1200px) {
+
+
     .logo img {
         width: 30%;
     }
 }
+
+
+
