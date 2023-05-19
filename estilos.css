@@ -249,8 +249,12 @@ h3 {
     background-color: darkgrey;
 }
 
+#contacto h2{
+    padding-top: 50px;
+}
+
 form {
-    padding-top: 70px;
+    padding-top: 10px;
     transition: all 4s ease-in-out;
     text-align: center;
 }
