@@ -383,6 +383,12 @@ cuando se usa max-width se expresa en términos de mobile first*/
         margin-top: 10px;
         width: 80%;
     }
+    
+   /*debo apuntar a dos elementos diferentes usando una coma*/
+    #form input,
+    #form textarea {
+        width: 80%;
+    }
 
     footer p {
         font-size: smaller;
